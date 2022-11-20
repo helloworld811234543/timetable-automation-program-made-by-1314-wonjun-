@@ -1,0 +1,110 @@
+print("월요일\t화요일\t수요일\t목요일\t금요일")
+print("체육\t한국사\t국어\t영어\t종교")
+print("미술\t과학\t수학\t정보\t수학")
+print("미술\t사회\t한국사\t체육\t국어")
+print("사회\t채플\t영어\t수학\t정보")
+print("국어\t음악\t종교\t국어\t창체")
+print("한국사\t영어\t정보\t음악\t창체")
+print("수학\t수학\t과학\t사회")
+
+from datetime import datetime
+
+now = datetime.now()
+a = now.weekday() #요일
+b = now.strftime('%H%M') #시간
+b = str(b)
+c = b[:2]
+d = b[2:4]
+c = int(c)
+d = int(d)
+
+if a == 0:
+  if (8<= c <9 and 35<= d < 60) or (9<= c <10 and 0<= d <25):
+    print("지금은 체육 시간입니다")
+  elif (9<= c <10 and 35<= d < 60) or (10<= c <11 and 0<= d <25):
+    print("지금은 미술 시간입니다")
+  elif (10<= c <11 and 35<= d < 60) or (11<= c <12 and 0<= d <25):
+    print("지금은 미술 시간입니다")
+  elif (11<= c <12 and 35<= d < 60) or (12<= c <13 and 0<= d <25):
+    print("지금은 사회 시간입니다")
+  elif (13<= c <14 and 20<= d < 60) or (14<= c <15 and 0<= d <10):
+    print("지금은 국어 시간입니다")
+  elif (14<= c <15 and 20<= d < 60) or (15<= c <16 and 0<= d <10):
+    print("지금은 한국사 시간입니다")
+  elif (15<= c <16 and 20<= d < 60) or (16<= c <17 and 0<= d <10):
+    print("지금은 수학 시간입니다")
+  else:
+    print("지금은 쉬는 시간입니다")
+  
+elif a == 1:
+  if (8<= c <9 and 35<= d < 60) or (9<= c <10 and 0<= d <25):
+    print("지금은 한국사 시간입니다")
+  elif (9<= c <10 and 35<= d < 60) or (10<= c <11 and 0<= d <25):
+    print("지금은 과학 시간입니다")
+  elif (10<= c <11 and 35<= d < 60) or (11<= c <12 and 0<= d <25):
+    print("지금은 사회 시간입니다")
+  elif (11<= c <12 and 35<= d < 60) or (12<= c <13 and 0<= d <25):
+    print("지금은 채플 시간입니다")
+  elif (13<= c <14 and 20<= d < 60) or (14<= c <15 and 0<= d <10):
+    print("지금은 음악 시간입니다")
+  elif (14<= c <15 and 20<= d < 60) or (15<= c <16 and 0<= d <10):
+    print("지금은 영어 시간입니다")
+  elif (15<= c <16 and 20<= d < 60) or (16<= c <17 and 0<= d <10):
+    print("지금은 수학 시간입니다")
+  else:
+    print("지금은 쉬는 시간입니다")
+ 
+elif a == 2:
+  if (8<= c <9 and 35<= d < 60) or (9<= c <10 and 0<= d <25):
+    print("지금은 국어 시간입니다")
+  elif (9<= c <10 and 35<= d < 60) or (10<= c <11 and 0<= d <25):
+    print("지금은 수학 시간입니다")
+  elif (10<= c <11 and 35<= d < 60) or (11<= c <12 and 0<= d <25):
+    print("지금은 한국사 시간입니다")
+  elif (11<= c <12 and 35<= d < 60) or (12<= c <13 and 0<= d <25):
+    print("지금은 영어 시간입니다")
+  elif (13<= c <14 and 20<= d < 60) or (14<= c <15 and 0<= d <10):
+    print("지금은 종교 시간입니다")
+  elif (14<= c <15 and 20<= d < 60) or (15<= c <16 and 0<= d <10):
+    print("지금은 정보 시간입니다")
+  elif (15<= c <16 and 20<= d < 60) or (16<= c <17 and 0<= d <10):
+    print("과학")
+  else:
+    print("지금은 쉬는 시간입니다")
+
+elif a == 3:
+  if (8<= c <9 and 35<= d < 60) or (9<= c <10 and 0<= d <25):
+    print("지금은 영어 시간입니다")
+  elif (9<= c <10 and 35<= d < 60) or (10<= c <11 and 0<= d <25):
+    print("지금은 정보 시간입니다")
+  elif (10<= c <11 and 35<= d < 60) or (11<= c <12 and 0<= d <25):
+    print("지금은 체육 시간입니다")
+  elif (11<= c <12 and 35<= d < 60) or (12<= c <13 and 0<= d <25):
+    print("지금은 수학 시간입니다")
+  elif (13<= c <14 and 20<= d < 60) or (14<= c <15 and 0<= d <10):
+    print("지금은 국어 시간입니다")
+  elif (14<= c <15 and 20<= d < 60) or (15<= c <16 and 0<= d <10):
+    print("지금은 음악 시간입니다")
+  elif (15<= c <16 and 20<= d < 60) or (16<= c <17 and 0<= d <10):
+    print("지금은 사회 시간입니다")
+  else:
+    print("지금은 쉬는 시간입니다")
+
+elif a == 4:
+  if (8<= c <9 and 35<= d < 60) or (9<= c <10 and 0<= d <25):
+    print("지금은 종교 시간입니다")
+  elif (9<= c <10 and 35<= d < 60) or (10<= c <11 and 0<= d <25):
+    print("지금은 수학 시간입니다")
+  elif (10<= c <11 and 35<= d < 60) or (11<= c <12 and 0<= d <25):
+    print("지금은 국어 시간입니다")
+  elif (11<= c <12 and 35<= d < 60) or (12<= c <13 and 0<= d <25):
+    print("지금은 정보 시간입니다")
+  elif (13<= c <14 and 20<= d < 60) or (14<= c <15 and 0<= d <10):
+    print("지금은 창체 시간입니다")
+  elif (14<= c <15 and 20<= d < 60) or (15<= c <16 and 0<= d <10):
+    print("지금은 창체 시간입니다")
+  else:
+    print("지금은 쉬는 시간입니다")
+
+else:
+  print("지금은 학교 시간이 아닙니다")
