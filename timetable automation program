@@ -1,3 +1,5 @@
+from datetime import datetime
+
 print("월요일\t화요일\t수요일\t목요일\t금요일")
 print("체육\t한국사\t국어\t영어\t종교")
 print("미술\t과학\t수학\t정보\t수학")
@@ -6,8 +8,6 @@ print("사회\t채플\t영어\t수학\t정보")
 print("국어\t음악\t종교\t국어\t창체")
 print("한국사\t영어\t정보\t음악\t창체")
 print("수학\t수학\t과학\t사회")
-
-from datetime import datetime
 
 now = datetime.now()
 a = now.weekday() #요일
